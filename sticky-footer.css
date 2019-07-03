@@ -1,0 +1,148 @@
+/* Element Edits to bootstrap*/
+body{
+  background-image: url("./imgs/bk2.png")
+}
+
+
+p{
+  text-indent: 50px;
+}
+nav.a{
+  color:red;
+}
+
+/*Modifications to Bootstrap Componets*/ 
+.navbar-custom{
+  background-color: #116466;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link{
+    color: #ffffff;
+}
+
+.navbar-toggler-icon{
+  background-color: #fafafa;
+}
+
+.jumbotron{
+  background-color: #d1e8e2;
+  border-color: #939790;
+  border-width: 6px;
+  border-style: groove;
+}
+.card-img-caption {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+  
+.card-img-caption .card-img-top {
+  z-index: 0;
+  max-height: 250px;
+}
+    
+.card-img-caption .card-text {
+  font-size: 140%;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  z-index: 1;
+  background:rgba(74, 170, 165, 0.8);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#ffffff;
+}
+/* .card{
+  margin: 1%;
+} */
+/*Sticky Footer Requirements*/
+main > .container {
+  padding: 60px 15px 0;
+}
+
+.footer {
+  background-color: #9E8881;
+  color: black;
+
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/* Letters working */
+
+div.foo{
+  margin-left: 10px;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin: 0.00em;
+  position: relative;
+  color: #d9b08c;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter:before{
+  color: #d1e8e2;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(117, 100, 85, 0.336);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
